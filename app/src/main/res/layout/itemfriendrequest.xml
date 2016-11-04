@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewRequester"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_weight="0.01"
+        android:src="@drawable/avatar"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFFFF" />
+
+
+
+    <TextView
+        android:text="SomeOne"
+        android:textColor="#FF0000FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:id="@+id/textViewrequestername"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewrequestername"
+        android:layout_alignLeft="@+id/textViewrequestername"
+        android:layout_alignStart="@+id/textViewrequestername"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp">
+      <Button
+          android:text="Accept"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/buttonAccept"
+          android:focusable="false"
+          android:layout_marginRight="40dp" />
+
+      <Button
+          android:text="Ignore"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:id="@+id/buttonIgnore"
+          />
+
+    </LinearLayout>
+</RelativeLayout>
